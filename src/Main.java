@@ -109,8 +109,6 @@ public class Main {
                     author = a;
                 }
             }
-            System.out.println("회원이 아닙니다. 글을 작성할 수 없습니다.");
-            return;
         }
         System.out.println("제목을 입력해주십시오");
         String postTitle = br.readLine();
