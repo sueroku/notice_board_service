@@ -17,6 +17,7 @@ public class Main {
         loop1:
         while (true) {
             System.out.println("--------------------------------");
+            System.out.println("--------------------------------");
             System.out.println("게시판 서비스를 이용합니다.");
             System.out.printf("1. 회원가입\n2. 회원목록조회\n3. 회원상세조회\n4. 게시글작성\n5. 게시글목록조회\n6. 게시글조회\n그외번호. 종료\n");
             switch (Integer.parseInt(br.readLine())) {
@@ -65,7 +66,7 @@ public class Main {
             for (Author a : authorList) {
                 System.out.println("사용자 ID : " + a.getId());
                 System.out.println("사용자 EMAIL : " + a.getEmail());
-                System.out.println("---------next---------");
+                System.out.println("~~~~~~~next~~~~~~~");
             }
         } else {
             System.out.println("회원이 없습니다.");
@@ -122,7 +123,7 @@ public class Main {
             for (Post p : postList) {
                 System.out.println("게시글 ID : " + p.getId());
                 System.out.println("게시글 제목 : " + p.getTitle());
-                System.out.println("---------next---------");
+                System.out.println("~~~~~~~next~~~~~~~");
             }
         } else {
             System.out.println("게시글이 없습니다.");
@@ -145,7 +146,6 @@ public class Main {
                     System.out.println("글 ID : " + p.getId());
                     System.out.println("글 제목 : " + p.getTitle());
                     System.out.println("글 내용 : " + p.getContents());
-                    System.out.println("---------next---------");
                 }
             }
         }
